@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    form {
+      width: 500px;
+      padding: 20px;
+      border: 1px solid grey;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 5px #ccc;
+      margin: 30px auto;
+      background-color: white;
+    }
+
+    h1 {
+      color: blue;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 38px;
+      text-align: center;
+    }
+
+    h2, p {
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"] {
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    #name, #sirname {
+      width: 48%;
+      display: inline-block;
+    }
+
+    #sirname {
+      float: right;
+    }
+
+    h4 {
+      margin-top: 20px;
+    }
+
+    .gender-group {
+      margin-top: 10px;
+    }
+
+    .gender-group label {
+      margin-right: 15px;
+    }
+
+    #submit {
+      width: 100%;
+      height: 40px;
+      background-color: rgb(3, 114, 3);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background-color: rgb(2, 95, 2);
+    }
+
+    .terms {
+      font-size: 12px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    .terms a {
+      color: #385898;
+      text-decoration: none;
+    }
+
+    .terms a:hover {
+      text-decoration: underline;
+    }
+
+    h5{
+    padding:0px;
+    margin:0px; 
+    }
+  </style>
+</head>
+<body>
+
+<form method="post">
+    &copy  Made By Rakesh Kurrey All Rights Reseved
+  <h1>Facebook</h1>
+  <h2>Sign Up</h2>
+  <p>It's quick and easy</p>
+
+  <input type="text" name="name" id="name" placeholder="First Name" />
+  <input type="text" name="sirname" id="sirname" placeholder="Surname" />
+
+  <br><br>
+  <input type="text" name="number" id="number" placeholder="Mobile number or email address" />
+
+  <br><br>
+  <input type="password" name="password" id="password" placeholder="New password" />
+
+  <br><br>
+  <h5>date of birthday</h5>
+  <input type="date" name="date" id="date" />
+
+  <h4>Gender</h4>
+  <div class="gender-group">
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <label><input type="radio" name="gender" value="others"> Others</label>
+  </div>
+
+  <div class="terms">
+    By clicking Sign Up, you agree to our
+    <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>.
+    You may receive SMS notifications from us and can opt out at any time.
+  </div>
+
+  <input type="submit" value="Sign Up" id="submit">
+</form>
+
+</body>
+</html>
